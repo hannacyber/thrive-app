@@ -1,4 +1,4 @@
-# THRIVE — App Review resubmission kit (Guideline 5.6)
+# THRIVE — App Review resubmission kit
 
 ## 1. Paste into App Store Connect → App Review Information → Notes
 
@@ -71,29 +71,3 @@ We will fix it right away.
 
 BrainCare Foundation
 ```
-
-## 3. Metadata checklist (5.6 is often triggered by metadata, not code)
-
-- [ ] **This build (v3 / 1.1.0):** the UI, colors and app icon all changed, so every screenshot must be
-      retaken. If you add localized App Store listings (zh-Hans, zh-Hant, es, ja, ko), translate the
-      description from the same English text; don't add claims the app doesn't make.
-- [ ] **What's New text (1.1.0):** "New look, six languages, more tea shops, and a smaller download."
-- [ ] **Screenshots:** retake all of them from this build. Any screenshot still showing the old
-      leaderboard, "Jordan", pre-filled drinks, "AI Companion" or "Personalized alerts" does not
-      match the binary. That mismatch reads as "hidden features".
-- [ ] **Description / subtitle / keywords:** no "AI", "chatbot", "wearable", "HRV", "leaderboard",
-      "compete with friends", or anything the build doesn't do. Don't put brand names
-      (Starbucks, Red Bull…) in the **keywords** or **subtitle**. That is keyword spam, and 5.2.5 / 2.3.7
-      also apply.
-- [ ] **Privacy Policy URL** = `https://www.braincarefund.org/thrive-app-privacy`, the same one the
-      app opens. Make sure the page is live and matches `legal/privacy-policy.html`.
-- [ ] **App Privacy ("nutrition label"):** "Data Not Collected".
-- [ ] **Age rating:** 13+ questionnaire answered honestly (Medical/Treatment Information:
-      "Infrequent/Mild").
-- [ ] **Support URL** loads and shows a real contact.
-- [ ] **Category:** Health & Fitness.
-- [ ] **Account-level checks:** the developer account name matches BrainCare Foundation (D-U-N-S). Only one
-      developer account submits this app. Nobody signs in to App Store Connect through VPNs or shared or
-      automated logins. The "pattern of unusual behavior" wording is also used for account-level signals.
-      If the next rejection still names no feature, appeal to the App Review Board:
-      https://developer.apple.com/contact/app-store/?topic=appeal
