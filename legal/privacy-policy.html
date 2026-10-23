@@ -1,0 +1,335 @@
+<title>THRIVE Privacy Policy</title>
+<style>
+  :root {
+    --bg: #F7F3EA;
+    --bg-tint: #EFE8D8;
+    --surface: #FFFDF7;
+    --border: #E6DCC4;
+    --text: #1B1A2E;
+    --text-dim: #5B5A72;
+    --text-faint: #8D8B9E;
+    --amber: #DB9B34;
+    --amber-ink: #6B4A0E;
+    --amber-soft: #F3DFB2;
+    --peri: #6E7AD1;
+    --sage: #5E9C7C;
+    --shadow: rgba(30, 20, 10, 0.10);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0C0D1C;
+      --bg-tint: #14162C;
+      --surface: #171A34;
+      --border: #2B2E52;
+      --text: #EDEBF7;
+      --text-dim: #ADAAC9;
+      --text-faint: #726F92;
+      --amber: #E5A845;
+      --amber-ink: #F6DFAE;
+      --amber-soft: #3A2C10;
+      --peri: #8B96E6;
+      --sage: #7FC3A0;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0C0D1C;
+    --bg-tint: #14162C;
+    --surface: #171A34;
+    --border: #2B2E52;
+    --text: #EDEBF7;
+    --text-dim: #ADAAC9;
+    --text-faint: #726F92;
+    --amber: #E5A845;
+    --amber-ink: #F6DFAE;
+    --amber-soft: #3A2C10;
+    --peri: #8B96E6;
+    --sage: #7FC3A0;
+    --shadow: rgba(0, 0, 0, 0.35);
+  }
+
+  @font-face {
+    font-family: 'Fraunces';
+    src: local('Fraunces');
+  }
+
+  body {
+    background: var(--bg);
+    background-image: radial-gradient(circle at 12% -6%, var(--bg-tint), transparent 55%);
+    color: var(--text);
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  header.masthead {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .mark {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mark svg { display: block; }
+
+  .wordmark {
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 0.01em;
+  }
+
+  .wordmark small {
+    display: block;
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+    font-weight: 500;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-top: 2px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: clamp(28px, 4.4vw, 36px);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+    font-size: 12px;
+    color: var(--text-faint);
+    margin: 0 0 8px;
+  }
+
+  .lede {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text-dim);
+    max-width: 60ch;
+    margin: 20px 0 0;
+  }
+
+  .sections {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    padding: 28px 0;
+    border-top: 1px solid var(--border);
+  }
+
+  section:first-child { border-top: 1px solid var(--border); }
+
+  h2 {
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  h2 .num {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--amber-ink);
+    background: var(--amber-soft);
+    border-radius: 6px;
+    padding: 2px 7px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-dim);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .pill {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 5px 11px;
+  }
+
+  .pill.no {
+    color: var(--amber-ink);
+    background: var(--amber-soft);
+    border-color: transparent;
+  }
+
+  footer {
+    margin-top: 44px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  footer .org {
+    font-size: 13px;
+    color: var(--text-faint);
+    line-height: 1.6;
+  }
+
+  footer a {
+    color: var(--peri);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  footer a:hover,
+  footer a:focus-visible {
+    text-decoration: underline;
+  }
+
+  a:focus-visible, .pill:focus-visible {
+    outline: 2px solid var(--peri);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    section { animation: rise 0.5s ease both; }
+    section:nth-child(1) { animation-delay: 0.02s; }
+    section:nth-child(2) { animation-delay: 0.05s; }
+    section:nth-child(3) { animation-delay: 0.08s; }
+    section:nth-child(4) { animation-delay: 0.11s; }
+    section:nth-child(5) { animation-delay: 0.14s; }
+    section:nth-child(6) { animation-delay: 0.17s; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  }
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+
+<div class="page">
+  <header class="masthead">
+    <div class="mark">
+      <svg width="24" height="24" viewBox="0 0 48 48">
+        <circle cx="24" cy="21" r="14" fill="none" stroke="#DB9B34" stroke-width="2.6" />
+        <circle cx="17.5" cy="20" r="5" fill="none" stroke="#DB9B34" stroke-width="2.4" />
+        <circle cx="30.5" cy="20" r="5" fill="none" stroke="#DB9B34" stroke-width="2.4" />
+        <circle cx="17.5" cy="20" r="1.7" fill="#DB9B34" />
+        <circle cx="30.5" cy="20" r="1.7" fill="#DB9B34" />
+        <path d="M22 25l2 3 2-3" fill="none" stroke="#DB9B34" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12 12l4 3M36 12l-4 3" fill="none" stroke="#DB9B34" stroke-width="2.4" stroke-linecap="round" />
+        <path d="M16 34c3 3 13 3 16 0" fill="none" stroke="#DB9B34" stroke-width="2.4" stroke-linecap="round" />
+      </svg>
+    </div>
+    <div class="wordmark">
+      THRIVE
+      <small>Caffeine &amp; sleep companion</small>
+    </div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated September 30, 2026 · Published by BrainCare Foundation</p>
+  <p class="lede">
+    This policy describes how the THRIVE mobile app handles information. THRIVE is a caffeine
+    and sleep tracker built for teens — the short version is that everything you log stays on
+    your own device.
+  </p>
+
+  <div class="sections">
+    <section>
+      <h2><span class="num">01</span>What the app stores</h2>
+      <p>
+        If you use THRIVE, the app may store on your device: drinks you log, caffeine totals,
+        an optional first name, bedtime and settings, sleep ratings, streaks, journal notes, and
+        optional questionnaire answers.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">02</span>Where it is stored</h2>
+      <p>
+        All of this stays on your device. THRIVE does not create an account, does not have a
+        THRIVE server, and does not upload this information to BrainCare Foundation.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">03</span>What we do not do</h2>
+      <p>
+        We do not sell your data. We do not use advertising or analytics SDKs in THRIVE. We do
+        not share THRIVE data with third parties for advertising.
+      </p>
+      <div class="pill-row">
+        <span class="pill no">No account required</span>
+        <span class="pill no">No ads</span>
+        <span class="pill no">No analytics SDKs</span>
+        <span class="pill no">No data sale</span>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="num">04</span>Who the app is for</h2>
+      <p>
+        THRIVE is intended for people 13 and older. It is a wellness tracker, not a medical
+        device, and it does not provide medical advice.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">05</span>How to delete your data</h2>
+      <p>You can erase everything at any time in Settings → “Erase all data on this phone”. Uninstalling the app also removes it. The app has a built-in drink database and makes no network requests of its own; the only links that open the internet are ones you tap (this policy, data sources, and email support).</p>
+    </section>
+
+    <section>
+      <h2><span class="num">06</span>Contact</h2>
+      <p>Questions: <a href="mailto:info@braincarefund.org" style="color: var(--peri); font-weight: 600; text-decoration: none;">info@braincarefund.org</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <div class="org">
+      BrainCare Foundation<br />
+      Publisher of THRIVE
+    </div>
+    <a href="mailto:info@braincarefund.org">info@braincarefund.org</a>
+  </footer>
+</div>

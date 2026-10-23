@@ -1,0 +1,16 @@
+node_modules/
+.expo/
+dist/
+dist-ios/
+web-build/
+android/
+ios/
+_tools/
+/_*
+store-listing/_edgeprof/
+*.aab
+*.ipa
+*.log
+.env
+.env*.local
+privacy.html
