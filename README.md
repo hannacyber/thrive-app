@@ -1,4 +1,5 @@
 # THRIVE (Native)
+This repo is a public snapshot of THRIVE v3.1.0 (the version on the App Store and Google Play). Earlier development happened locally before I open-sourced it for the Congressional App Challenge.
 
 **THRIVE** is an open-source teen caffeine-and-sleep companion built with React Native and Expo. It helps young adults understand caffeine half-life decay, monitor intake against pediatric guidelines, and cultivate healthier sleep habits.
 
